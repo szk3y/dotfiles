@@ -1,0 +1,7 @@
+[user]
+	email = d4tt423@gmail.com
+	name = szk3y
+[core]
+	editor = vim
+[push]
+	default = simple

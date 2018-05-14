@@ -1,0 +1,7 @@
+binutils
+clang
+gcc
+gdb
+git
+make
+vim
