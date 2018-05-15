@@ -4,4 +4,5 @@ gcc
 gdb
 git
 make
+tmux
 vim
