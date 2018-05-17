@@ -25,7 +25,7 @@ call plug#end()
 
 " set color scheme
 set t_Co=256
-colorscheme modified-heroku-terminal
+colorscheme heroku-terminal
 "colorscheme molokai_dark
 "colorscheme blacklight
 "colorscheme onedark
