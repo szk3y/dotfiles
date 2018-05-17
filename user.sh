@@ -14,13 +14,13 @@ cd $HOME
 for path_to_file in $(find $DIR -name '.?*' | grep -v '\.git' | grep -v '\.\.' | grep -v '\.gdbinit' | grep -v '\.gitignore'); do
   ln -s $path_to_file $HOME
 done
-cp .gdbinit $HOME
+cp $DIR/.gdbinit $HOME
 cd $HOME
 
 # clone github repositories
 mkdir $HOME/repo/
 cd $HOME/repo/
-for i in $(cat $github_repositories); do
+for i in $(cat $DIR/$github_repositories); do
   git clone $i
 done
 cd $HOME

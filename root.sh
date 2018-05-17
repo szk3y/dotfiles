@@ -8,6 +8,4 @@ fi
 
 package_list_file='apt_packages.txt'
 
-for i in $(cat $package_list_file); do
-  apt-get install $i
-done
+cat $package_list_file | xargs apt-get -y install
