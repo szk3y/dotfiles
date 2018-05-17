@@ -28,6 +28,6 @@ cd $HOME
 # setup vim
 cd $HOME
 mkdir -p $HOME/.vim/{autoload,colors,plugged}
-cp $HOME/repo/vim-plug/plug.vim $HOME/.vim
+cp $HOME/repo/vim-plug/plug.vim $HOME/.vim/autoload
 cp $HOME/repo/heroku-colorscheme/colors/* $HOME/.vim/colors/
 cd $HOME
