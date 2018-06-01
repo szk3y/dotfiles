@@ -5,6 +5,7 @@
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
+eval $(dircolors -b)
 alias mv='mv -i'
 alias cp='cp -i'
 alias ls='ls --color=auto'
