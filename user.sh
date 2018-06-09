@@ -11,7 +11,7 @@ fi
 
 # make symbolic links of dot files
 cd $HOME
-for path_to_file in $(find $DIR -name '.?*' | grep -v '\.git' | grep -v '\.\.' | grep -v '\.gdbinit' | grep -v '\.gitignore'); do
+for path_to_file in $(find $DIR -name '.?*' | grep -v '\.git' | grep -v '\.\.' | grep -v '\.gitignore'); do
   ln -s $path_to_file $HOME
 done
 cp $DIR/.gdbinit $HOME
