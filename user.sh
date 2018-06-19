@@ -1,6 +1,6 @@
 #!/bin/bash
 
-github_repositories='github_repositories.txt'
+git_repositories='git_repositories.txt'
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 if [ "$(whoami)" == "root" ]; then
@@ -17,10 +17,10 @@ done
 cp $DIR/.gdbinit $HOME
 cd $HOME
 
-# clone github repositories
+# clone git repositories
 mkdir $HOME/repo/
 cd $HOME/repo/
-for i in $(cat $DIR/$github_repositories); do
+for i in $(cat $DIR/$git_repositories); do
   git clone $i
 done
 cd $HOME
