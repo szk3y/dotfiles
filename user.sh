@@ -12,13 +12,15 @@ fi
 # make symbolic links of dot files
 cd $HOME
 for path_to_file in $(find $DIR -name '.?*' | grep -v '\.git' | grep -v '\.\.' | grep -v '\.gitignore'); do
+  rm $HOME/$(basename $path_to_file)
   ln -s $path_to_file $HOME
 done
-cp $DIR/.gdbinit $HOME
 cd $HOME
 
 # clone git repositories
-mkdir $HOME/repo/
+if [ ! $HOME/repo ]; then
+  mkdir $HOME/repo/
+fi
 cd $HOME/repo/
 for i in $(cat $DIR/$git_repositories); do
   git clone $i
@@ -27,6 +29,7 @@ cd $HOME
 
 # setup vim
 cd $HOME
+rm -rf $HOME/.vim
 mkdir -p $HOME/.vim/{autoload,colors,plugged}
 cp $HOME/repo/vim-plug/plug.vim $HOME/.vim/autoload
 cp $HOME/repo/heroku-colorscheme/colors/* $HOME/.vim/colors/
