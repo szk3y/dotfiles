@@ -1,5 +1,4 @@
 binutils
-clang
 gcc
 gdb
 git
