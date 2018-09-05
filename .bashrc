@@ -9,3 +9,7 @@ export PS1="\[\e[1;31m\]\u\[\e[1;33m\]@\[\e[1;32m\]\h\[\e[1;36m\]:\[\e[1;34m\]\w
 export GOROOT="$HOME/go/go-1.10.3"
 export GOPATH="$HOME/go/packages"
 export PATH="$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/.local/bin/:$PATH"
+
+if [ -f '.bashrc.local' ]; then
+  source '.bashrc.local'
+fi
