@@ -1,7 +1,8 @@
 https://github.com/0vercl0k/rp.git
 https://github.com/david942j/one_gadget.git
 https://github.com/junegunn/vim-plug.git
-https://github.com/scwuaptx/peda.git
+https://github.com/pwndbg/pwndbg.git
 https://github.com/scwuaptx/Pwngdb.git
+https://github.com/scwuaptx/peda.git
 https://github.com/slimm609/checksec.sh.git
 https://github.com/szk3y/heroku-colorscheme.git
