@@ -10,6 +10,8 @@ export GOROOT="$HOME/go/go-1.10.3"
 export GOPATH="$HOME/go/packages"
 export PATH="$GOROOT/bin:$GOPATH/bin:$HOME/.cargo/bin:$HOME/bin:$HOME/.local/bin/:$PATH"
 
+set -o vi
+
 if [ -f '.bashrc.local' ]; then
   source '.bashrc.local'
 fi
