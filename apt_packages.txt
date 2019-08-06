@@ -5,3 +5,5 @@ git
 make
 tmux
 vim
+python-pip
+python3-pip
