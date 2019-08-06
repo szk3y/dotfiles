@@ -3,7 +3,8 @@ gcc
 gdb
 git
 make
-tmux
-vim
+mercurial
 python-pip
 python3-pip
+tmux
+vim
