@@ -6,6 +6,8 @@ if [ "$(whoami)" != "root" ]; then
   exit 1
 fi
 
+apt update
+
 package_list_file='apt_packages.txt'
 
 cat $package_list_file | xargs apt-get -y install
