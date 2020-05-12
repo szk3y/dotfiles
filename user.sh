@@ -11,7 +11,7 @@ fi
 
 # make symbolic links of dot files
 cd $HOME
-for path_to_file in $(find $DIR -name '.?*' | grep -v '\.git' | grep -v '\.\.' | grep -v '\.gitignore') .gitconfig ; do
+for path_to_file in $(find $DIR -name '.?*' | grep -v '\.git' | grep -v '\.\.' | grep -v '\.gitignore') $DIR/.gitconfig ; do
   if [ -f "$HOME/$(basename $path_to_file)" ]; then
     rm $HOME/$(basename $path_to_file)
   fi
