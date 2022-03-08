@@ -26,6 +26,10 @@ export PS1="${green}\u@\h${blue}(\D{%Y/%m/%d-%T})\$(if [ \$? == 0 ] && [ -f ~/.s
 export GOPATH="$HOME/go/packages"
 export PATH="$GOPATH/bin:$HOME/.cargo/bin:$HOME/bin:$HOME/.local/bin/:$PATH"
 
+# Google depot_tools
+export PATH=$PATH:${HOME}/repo/depot_tools
+export DEPOT_TOOLS_UPDATE=0
+
 if [ -f '.bashrc.local' ]; then
   source '.bashrc.local'
 fi

@@ -1,6 +1,9 @@
 " decrease delay in 'O' command
 set noesckeys
 
+" always show the tab header
+set showtabline=2
+
 " indent style
 set tabstop=8
 set expandtab

@@ -1,9 +1,3 @@
-define peda
-  source ~/repo/peda/peda.py
-# turn off logging in peda
-  pset option autosave off
-end
-
 define pwn
   source ~/repo/pwndbg/gdbinit.py
 end
