@@ -3,12 +3,6 @@
 git_repositories='git_repositories.txt'
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-if [ "$(whoami)" == "root" ]; then
-  echo "Error: You shouldn't run this script with root privileges" 1>&2
-  echo "       Retry as a normal user" 1>&2
-  exit 1
-fi
-
 # make symbolic links of dot files
 cd $HOME
 for path_to_file in $(find $DIR -name '.?*' | grep -v '\.git' | grep -v '\.\.' | grep -v '\.gitignore') $DIR/.gitconfig ; do
