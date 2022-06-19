@@ -1,7 +1,3 @@
-define pwn
-  source ~/repo/pwndbg/gdbinit.py
-end
-
 define gef
   source ~/repo/gef/gef.py
 end

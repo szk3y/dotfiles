@@ -1,9 +1,9 @@
 #!/bin/bash
 
-git_repositories='git_repositories.txt'
+git_repositories='util_git_repositories.txt'
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# make symbolic links of dot files
+# make symbolic links of the config files
 cd $HOME
 for path_to_file in $(find $DIR -name '.?*' | grep -v '\.git' | grep -v '\.\.' | grep -v '\.gitignore') $DIR/.gitconfig ; do
   if [ -f "$HOME/$(basename $path_to_file)" ]; then
